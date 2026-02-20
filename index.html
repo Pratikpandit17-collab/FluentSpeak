@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FluentSpeak - English Speaking Course</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loginPage" class="login-container">
+  <h2>Welcome to FluentSpeak</h2>
+  <input type="text" id="usernameInput" placeholder="Enter your name">
+  <button onclick="login()">Start Learning</button>
+</div>
+
+<div id="app" class="hidden">
+  <header>
+    <h1>FluentSpeak</h1>
+    <div>
+      <span id="welcomeUser"></span>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <h3>Chapters</h3>
+      <ul id="chapterList"></ul>
+    </aside>
+
+    <section class="content">
+      <h2 id="chapterTitle">Select a Chapter</h2>
+      <div id="chapterContent"></div>
+      <button id="completeBtn" class="complete-btn hidden" onclick="markComplete()">Mark as Completed</button>
+    </section>
+  </main>
+
+  <footer>
+    <p id="progressText"></p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
